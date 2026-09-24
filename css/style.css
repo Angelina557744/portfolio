@@ -130,17 +130,80 @@ ul{list-style:none}
 
 .hero__right{
   display:flex;justify-content:center;
+  align-items:center;
 }
-.hero__avatar{
-  width:220px;height:220px;
+
+/* ============ ТЕРМИНАЛ ============ */
+.hero__terminal{
+  width:100%;
+  max-width:420px;
+  background:#0f172a;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 24px 60px -20px rgba(15,23,42,.45);
+  font-family:'JetBrains Mono',monospace;
+  transform:rotate(-1deg);
+  transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s;
+}
+.hero__terminal:hover{
+  transform:rotate(0deg) translateY(-4px);
+  box-shadow:0 32px 80px -20px rgba(15,23,42,.55);
+}
+
+.hero__terminal-bar{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:10px 14px;
+  background:#1e293b;
+  border-bottom:1px solid #334155;
+}
+.hero__terminal-bar span{
+  width:10px;
+  height:10px;
   border-radius:50%;
-  display:grid;place-items:center;
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
-  color:#fff;
-  font:800 5rem 'Inter';
-  letter-spacing:-4px;
-  box-shadow:0 20px 60px -20px rgba(37,99,235,.4);
+  background:#475569;
 }
+.hero__terminal-bar span:nth-child(1){background:#ef4444}
+.hero__terminal-bar span:nth-child(2){background:#eab308}
+.hero__terminal-bar span:nth-child(3){background:#22c55e}
+.hero__terminal-bar em{
+  margin-left:auto;
+  font-size:.7rem;
+  color:#94a3b8;
+  font-style:normal;
+  letter-spacing:.02em;
+}
+
+.hero__terminal-body{
+  padding:18px 20px 22px;
+  font-size:.82rem;
+  line-height:1.85;
+  color:#e2e8f0;
+  overflow-x:auto;
+}
+.hero__terminal-body p{
+  margin:0;
+  white-space:nowrap;
+}
+.t-prompt{color:#22c55e}
+.t-out{color:#94a3b8}
+.t-out--indent{padding-left:20px}
+.t-green{color:#4ade80}
+.t-yellow{color:#facc15}
+
+.t-cursor{
+  display:inline-block;
+  width:8px;
+  height:13px;
+  background:#4ade80;
+  vertical-align:middle;
+  animation:blink 1s steps(1) infinite;
+}
+@keyframes blink{
+  50%{opacity:0}
+}
+
 
 /* ============ SECTION HEAD ============ */
 .section__head{
@@ -364,10 +427,6 @@ ul{list-style:none}
   .header__inner{padding:14px 20px}
   .header__nav{display:none}
   .hero{padding:60px 0 70px}
-  .hero__avatar{width:160px;height:160px;font-size:3.5rem}
+  .hero__terminal{max-width:100%;transform:none}
+  .hero__terminal-body{font-size:.75rem;padding:16px 16px 18px}
   .hero__title{font-size:1.8rem}
-  .projects,.skills,.cta{padding:60px 0}
-  .section__head{margin-bottom:40px}
-  .project__links{flex-direction:column}
-  .project__links a{text-align:center}
-}
