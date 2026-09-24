@@ -1,127 +1,265 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ангелина — Frontend-разработчик</title>
-    <meta name="description" content="Портфолио Frontend-разработчика: многостраничные сайты на HTML, CSS и JavaScript.">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ангелина — Frontend-разработчик</title>
+<meta name="description" content="Портфолио Frontend-разработчика: многостраничные сайты, анимации, 3D на HTML, CSS и JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="hero">
-    <div class="container">
-        <div class="hero__inner">
-            <div class="hero__avatar">А</div>
-            <div class="hero__content">
-                <p class="hero__label">Full-stack разработчик</p>
-                <h1 class="hero__title">Ангелина</h1>
-                <p class="hero__text">
-                    Делаю сайты и веб-приложения под ключ: от макета в Figma до сервера и базы данных.
-                    Фронтенд, бэкенд, Tilda, WordPress.
-                </p>
-                <div class="hero__contacts">
-                    <button class="copy-email" data-email="linaolyalina@mail.ru">Скопировать email</button>
-                    <a href="https://t.me/gel_dlua_dascha">Telegram</a>
-                    <a href="https://github.com/angelina557744">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<!-- ШУМ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ПРОГРЕСС СКРОЛЛА -->
+<div class="progress" aria-hidden="true"></div>
+
+<!-- ХЕДЕР -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="header__brand">
+      <span class="header__axis"></span>
+      <span>Ангелина</span>
+    </a>
+    <nav class="header__nav">
+      <a href="#projects">Проекты</a>
+      <a href="#skills">Навыки</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="https://t.me/gel_dlua_dascha" class="btn btn--sm" target="_blank" rel="noopener">Написать</a>
+  </div>
 </header>
 
-    <main>
-        <section class="projects">
-            <div class="container">
-                <h2 class="section__title">Проекты</h2>
-                <div class="projects__grid">
+<main>
 
-                    <article class="project">
-                        <img src="img/preview-gazprom.jpg" alt="Gazprom" class="project__image">
-                        <div class="project__body">
-                            <h3 class="project__title">Газпром</h3>
-                            <p class="project__desc">Корпоративный сайт-реплика. 5 страниц, двухуровневая шапка, модалка поиска, карта Leaflet.</p>
-                            <div class="project__links">
-                                <a href="https://angelina557744.github.io/gazprom/" target="_blank" rel="noopener">Открыть сайт</a>
-                                <a href="https://github.com/angelina557744/gazprom" target="_blank" rel="noopener">Код</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img src="img/preview-floristry.jpg" alt="Rosette" class="project__image">
-                        <div class="project__body">
-                            <h3 class="project__title">Rosette — школа флористики</h3>
-                            <p class="project__desc">6 страниц, параллакс, анимированные счётчики, форма записи с валидацией и маской телефона.</p>
-                            <div class="project__links">
-                                <a href="https://angelina557744.github.io/school-of-floristry/" target="_blank" rel="noopener">Открыть сайт</a>
-                                <a href="https://github.com/angelina557744/school-of-floristry" target="_blank" rel="noopener">Код</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img src="img/preview-dental.jpg" alt="NovaDent" class="project__image">
-                        <div class="project__body">
-                            <h3 class="project__title">NovaDent — стоматология</h3>
-                            <p class="project__desc">6 страниц, три формы с валидацией, карта клиник, блог стоматолога, сетка врачей.</p>
-                            <div class="project__links">
-                                <a href="https://angelina557744.github.io/dental-clinic/" target="_blank" rel="noopener">Открыть сайт</a>
-                                <a href="https://github.com/angelina557744/dental-clinic" target="_blank" rel="noopener">Код</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img src="img/preview-zoo.jpg" alt="Zoo" class="project__image">
-                        <div class="project__body">
-                            <h3 class="project__title">Зоопарк</h3>
-                            <p class="project__desc">Многостраничный сайт зоопарка с описанием животных, билетами и галереей.</p>
-                            <div class="project__links">
-                                <a href="https://angelina557744.github.io/zoo/" target="_blank" rel="noopener">Открыть сайт</a>
-                                <a href="https://github.com/angelina557744/zoo" target="_blank" rel="noopener">Код</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img src="img/preview-cleaning.jpg" alt="Cleaning" class="project__image">
-                        <div class="project__body">
-                            <h3 class="project__title">Клининговая компания</h3>
-                            <p class="project__desc">Многостраничный сайт клининговых услуг с прайсом, формой заявки и отзывами.</p>
-                            <div class="project__links">
-                                <a href="https://angelina557744.github.io/cleaning-company/" target="_blank" rel="noopener">Открыть сайт</a>
-                                <a href="https://github.com/angelina557744/cleaning-company" target="_blank" rel="noopener">Код</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <div class="container">
-                <h2 class="section__title">Технологии</h2>
-                <ul class="skills__list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Flexbox</li>
-                    <li>CSS Grid</li>
-                    <li>JavaScript</li>
-                    <li>Адаптивная вёрстка</li>
-                    <li>БЭМ</li>
-                    <li>Git / GitHub</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Ангелина. Frontend-разработчик.</p>
+<!-- 01. HERO -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__meta mono">01 / Портфолио · 2026</div>
+    <div class="hero__grid">
+      <div class="hero__left">
+        <div class="hero__label mono">Frontend-разработчик</div>
+        <h1 class="hero__title">
+          <span class="line">Привет,</span>
+          <span class="line">я <span class="accent">Ангелина</span>.</span>
+        </h1>
+        <p class="hero__text">
+          Делаю сайты и веб-приложения под ключ — от макета в Figma до продакшена.
+          Пишу чистый HTML, CSS и JavaScript, работаю с анимациями, 3D и адаптивом.
+        </p>
+        <div class="hero__actions">
+          <button class="btn btn--solid copy-email" data-email="linaolyalina@mail.ru">Скопировать email</button>
+          <a href="https://t.me/gel_dlua_dascha" class="btn" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/angelina557744" class="btn" target="_blank" rel="noopener">GitHub</a>
         </div>
-    </footer>
+      </div>
+      <div class="hero__right">
+        <div class="hero__avatar">
+          <span>А</span>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <b>6</b>
+            <span class="mono">проектов</span>
+          </div>
+          <div class="stat">
+            <b>3+</b>
+            <span class="mono">года опыта</span>
+          </div>
+          <div class="stat">
+            <b>100%</b>
+            <span class="mono">адаптив</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- 02. ПРОЕКТЫ -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section__head">
+      <div class="mono">02 / Избранные проекты</div>
+      <h2 class="section__title">Что я делала</h2>
+      <p class="section__sub">6 проектов: от корпоративных сайтов до лендингов с анимациями и 3D.</p>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- AXIOS — главный проект -->
+      <article class="project project--featured">
+        <div class="project__image">
+          <img src="img/preview-axios (1).png" alt="AXIOS — архитектурное бюро" loading="lazy">
+          <span class="project__badge">Featured</span>
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2026 · HTML · CSS · JS · Three.js · GSAP</div>
+          <h3 class="project__title">AXIOS — архитектурное бюро</h3>
+          <p class="project__desc">
+            Премиум-сайт вымышленного архитектурного бюро. 9 страниц, 3D-сцена на Three.js,
+            кастомный курсор, плавный скролл, анимации на GSAP + ScrollTrigger, фильтры,
+            форма обратной связи, тёмная тема с лаймовым акцентом.
+          </p>
+          <div class="project__tags">
+            <span>Three.js</span><span>GSAP</span><span>Lenis</span><span>9 страниц</span>
+          </div>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/axios-architecture/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть сайт →</a>
+            <a href="https://github.com/angelina557744/axios-architecture" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__image">
+          <img src="img/preview-gazprom.jpg" alt="Газпром" loading="lazy">
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2025 · HTML · CSS · JS</div>
+          <h3 class="project__title">Газпром</h3>
+          <p class="project__desc">Корпоративный сайт-реплика. 5 страниц, двухуровневая шапка, модалка поиска, карта Leaflet.</p>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/gazprom/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть →</a>
+            <a href="https://github.com/angelina557744/gazprom" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__image">
+          <img src="img/preview-floristry.jpg" alt="Rosette" loading="lazy">
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2025 · HTML · CSS · JS</div>
+          <h3 class="project__title">Rosette — школа флористики</h3>
+          <p class="project__desc">6 страниц, параллакс, анимированные счётчики, форма записи с валидацией и маской телефона.</p>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/school-of-floristry/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть →</a>
+            <a href="https://github.com/angelina557744/school-of-floristry" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__image">
+          <img src="img/preview-dental.jpg" alt="NovaDent" loading="lazy">
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2025 · HTML · CSS · JS</div>
+          <h3 class="project__title">NovaDent — стоматология</h3>
+          <p class="project__desc">6 страниц, три формы с валидацией, карта клиник, блог стоматолога, сетка врачей.</p>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/dental-clinic/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть →</a>
+            <a href="https://github.com/angelina557744/dental-clinic" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__image">
+          <img src="img/preview-zoo.jpg" alt="Зоопарк" loading="lazy">
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2024 · HTML · CSS · JS</div>
+          <h3 class="project__title">Зоопарк</h3>
+          <p class="project__desc">Многостраничный сайт зоопарка с описанием животных, билетами и галереей.</p>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/zoo/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть →</a>
+            <a href="https://github.com/angelina557744/zoo" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__image">
+          <img src="img/preview-cleaning.jpg" alt="Клининг" loading="lazy">
+        </div>
+        <div class="project__body">
+          <div class="project__meta mono">2024 · HTML · CSS · JS</div>
+          <h3 class="project__title">Клининговая компания</h3>
+          <p class="project__desc">Многостраничный сайт клининговых услуг с прайсом, формой заявки и отзывами.</p>
+          <div class="project__links">
+            <a href="https://angelina557744.github.io/cleaning-company/" class="btn btn--solid btn--sm" target="_blank" rel="noopener">Открыть →</a>
+            <a href="https://github.com/angelina557744/cleaning-company" class="btn btn--sm" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 03. НАВЫКИ -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section__head">
+      <div class="mono">03 / Навыки</div>
+      <h2 class="section__title">Технологии</h2>
+    </div>
+
+    <div class="skills__groups">
+      <div class="skills__group">
+        <div class="mono skills__label">Frontend</div>
+        <ul class="skills__list">
+          <li>HTML5</li><li>CSS3</li><li>Flexbox</li><li>CSS Grid</li>
+          <li>JavaScript (ES6+)</li><li>Адаптивная вёрстка</li><li>БЭМ</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <div class="mono skills__label">Анимации и 3D</div>
+        <ul class="skills__list">
+          <li>GSAP</li><li>ScrollTrigger</li><li>Three.js</li><li>Lenis</li>
+          <li>SplitType</li><li>CSS-анимации</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <div class="mono skills__label">Инструменты</div>
+        <ul class="skills__list">
+          <li>Git / GitHub</li><li>Figma</li><li>VS Code</li>
+          <li>GitHub Pages</li><li>Tailwind CSS</li><li>Leaflet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04. CTA / КОНТАКТЫ -->
+<section class="cta" id="contacts">
+  <div class="container cta__inner">
+    <div class="mono">04 / Контакты</div>
+    <h2 class="cta__title">Обсудим проект?</h2>
+    <p class="cta__text">Открыта к заказам и предложениям. Напишите — отвечу в течение 24 часов.</p>
+    <div class="cta__actions">
+      <button class="btn btn--solid copy-email" data-email="linaolyalina@mail.ru">Скопировать email</button>
+      <a href="https://t.me/gel_dlua_dascha" class="btn" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/angelina557744" class="btn" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__big" aria-hidden="true">Ангелина</div>
+    <div class="footer__row">
+      <span class="mono">© 2026 · Frontend-разработчик</span>
+      <div class="footer__links">
+        <a href="https://t.me/gel_dlua_dascha" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://github.com/angelina557744" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:linaolyalina@mail.ru">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
