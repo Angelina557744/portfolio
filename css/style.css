@@ -341,10 +341,7 @@ ul{list-style:none}
   gap:24px;
 }
 
-/* ===== CTA у кнопки "изучить кейс" в карточке ===== */
-.project__links a:first-child {
-  color: var(--accent, #4ea1ff);
-}
+
 
 /* ===== Страница кейса ===== */
 .case-hero {
