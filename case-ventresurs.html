@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VentResurs — корпоративный портал | Ангелина</title>
+<meta name="description" content="Кейс: разработка корпоративного веб-приложения для инжиниринговой компании. Личный кабинет, админ-панель, чат, интеграция с GigaChat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__brand">Ангелина</a>
+    <nav class="header__nav">
+      <a href="index.html#projects">Проекты</a>
+      <a href="index.html#skills">Навыки</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Написать</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO КЕЙСА -->
+<section class="case-hero">
+  <div class="container">
+    <a href="index.html#projects" class="case-hero__back">← Все проекты</a>
+    <p class="hero__label">Корпоративный портал</p>
+    <h1 class="case-hero__title">VentResurs</h1>
+    <p class="case-hero__text">
+      Веб-приложение для инжиниринговой компании: сайт с каталогом услуг,
+      личные кабинеты для клиентов, админ-панель для сотрудников,
+      чат по проектам и модуль искусственного интеллекта для обработки обращений.
+    </p>
+
+    <div class="case-hero__meta">
+      <div><span>Роль</span><strong>Full-stack разработка</strong></div>
+      <div><span>Стек</span><strong>Node.js, Express, MySQL, EJS</strong></div>
+      <div><span>Тип</span><strong>Веб-приложение под ключ</strong></div>
+      <div><span>Срок</span><strong>3 недели</strong></div>
+    </div>
+
+    <div class="case-hero__actions">
+      <a href="https://github.com/angelina557744/ventresurs" class="btn btn--solid" target="_blank" rel="noopener">Открыть код</a>
+      <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Обсудить похожий проект</a>
+    </div>
+  </div>
+</section>
+
+<!-- ЗАДАЧА -->
+<section class="case-section">
+  <div class="container case-section__inner">
+    <h2 class="case-section__title">Задача</h2>
+    <p>
+      У компании не было единого цифрового канала для работы с клиентами.
+      Заявки приходили по телефону и почте, учитывались в таблицах, часть обращений
+      терялась при передаче между сотрудниками. Клиенты не могли отследить статус
+      своих проектов, а руководство не видело объективной картины по загрузке менеджеров.
+    </p>
+    <p>
+      Нужно было собрать сайт, который закроет весь цикл: от первого обращения
+      и предварительного расчёта стоимости до личного кабинета, чата по проекту
+      и внутренней админ-панели для сотрудников.
+    </p>
+  </div>
+</section>
+
+<!-- ЧТО РЕАЛИЗОВАНО -->
+<section class="case-section case-section--alt">
+  <div class="container">
+    <h2 class="case-section__title">Что реализовано</h2>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Публичная часть сайта</h3>
+        <p>
+          Главная, каталог услуг, портфолио реализованных объектов, страница контактов
+          с интерактивной картой. Всё адаптивно, с единым дизайном и быстрой загрузкой.
+          Изображения оптимизированы, иконки подключены через Lucide Icons.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-1.jpg" alt="Главная страница VentResurs" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Регистрация и авторизация</h3>
+        <p>
+          Клиенты создают учётные записи, пароли хешируются через bcrypt.
+          После входа открывается сессия и доступ к закрытым разделам.
+          Формы проверяются и на клиенте, и на сервере.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-2.jpg" alt="Страница авторизации" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Личный кабинет клиента</h3>
+        <p>
+          История расчётов, текущие заявки, статусы проектов, ответы от менеджеров
+          и чат по каждому проекту. Клиент в любой момент видит, на каком этапе
+          находится его заказ, и может задать вопрос напрямую сотруднику.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-3.jpg" alt="Личный кабинет клиента" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Инженерный калькулятор</h3>
+        <p>
+          Пошаговый расчёт предварительной стоимости монтажа систем вентиляции.
+          Клиент отвечает на вопросы, система считает стоимость по формуле
+          с коэффициентами и формирует коммерческое предложение.
+          Результат сохраняется в истории личного кабинета.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-4.jpg" alt="Инженерный калькулятор" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Интеграция с GigaChat</h3>
+        <p>
+          Входящие обращения автоматически классифицируются нейросетью по темам,
+          а в калькуляторе GigaChat формирует персональные технические рекомендации
+          по подобранному оборудованию. Это снимает часть рутины с менеджеров
+          и ускоряет первичную обработку заявок.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-5.jpg" alt="ИИ-модуль на базе GigaChat" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Админ-панель</h3>
+        <p>
+          Отдельный интерфейс для сотрудников. Менеджеры обрабатывают заявки,
+          меняют статусы проектов, отвечают клиентам в чате. Администратор
+          управляет контентом сайта, редактирует услуги, портфолио и изображения
+          без правки кода. Права разграничены по ролям.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-6.jpg" alt="Админ-панель" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Чат между клиентом и сотрудником</h3>
+        <p>
+          Внутри личного кабинета и админ-панели работает чат по каждому проекту.
+          Сообщения сохраняются в базе, клиент получает уведомления об ответах,
+          история переписки остаётся доступной в любой момент.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-7.jpg" alt="Чат по проекту" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Роли и права доступа</h3>
+        <p>
+          В системе три роли: клиент, менеджер, администратор. Каждая видит
+          только свои разделы и может выполнять только разрешённые действия.
+          Данные защищены от несанкционированного просмотра и редактирования.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/ventresurs-8.jpg" alt="Разграничение прав по ролям" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- СТЕК -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-section__title">Технологии</h2>
+    <div class="skills__groups">
+      <div class="skills__group">
+        <h3 class="skills__label">Frontend</h3>
+        <ul class="skills__list">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          <li>EJS</li><li>Swiper.js</li><li>Lucide Icons</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__label">Backend</h3>
+        <ul class="skills__list">
+          <li>Node.js</li><li>Express.js</li><li>MySQL</li>
+          <li>bcrypt</li><li>REST API</li><li>Сессии и авторизация</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__label">Интеграции</h3>
+        <ul class="skills__list">
+          <li>GigaChat API</li><li>Leaflet</li>
+          <li>Оптимизация изображений</li><li>Git / GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta__inner">
+    <h2 class="cta__title">Нужен похожий проект?</h2>
+    <p class="cta__text">Расскажите задачу — предложу решение и сроки. Отвечу в течение дня.</p>
+    <div class="cta__actions">
+      <button class="btn btn--solid copy-email" data-email="a.webdev@mail.ru">Скопировать email</button>
+      <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/angelina557744" class="btn" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© 2026 · Ангелина · Full-stack разработчик</span>
+    <div class="footer__links">
+      <a href="https://t.me/angelina_webdev" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/angelina557744" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:a.webdev@mail.ru">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://angelina557744.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
