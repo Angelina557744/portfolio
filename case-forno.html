@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forno — интернет-магазин пиццерии | Ангелина</title>
+<meta name="description" content="Кейс: разработка интернет-магазина для дровяной пиццерии. Каталог, корзина, оформление заказов, бронирование столов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__brand">Ангелина</a>
+    <nav class="header__nav">
+      <a href="index.html#projects">Проекты</a>
+      <a href="index.html#skills">Навыки</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Написать</a>
+  </div>
+</header>
+
+<main>
+
+<section class="case-hero">
+  <div class="container">
+    <a href="index.html#projects" class="case-hero__back">← Все проекты</a>
+    <p class="hero__label">Интернет-магазин</p>
+    <h1 class="case-hero__title">Forno</h1>
+    <p class="case-hero__text">
+      Веб-приложение для дровяной пиццерии. Каталог с фильтрами, корзина,
+      оформление доставки и самовывоза, бронирование столов.
+    </p>
+
+    <div class="case-hero__meta">
+      <div><span>Роль</span><strong>Full-stack разработка</strong></div>
+      <div><span>Стек</span><strong>Node.js, Express, EJS, SQLite</strong></div>
+      <div><span>Тип</span><strong>Интернет-магазин</strong></div>
+      <div><span>Срок</span><strong>3 недели</strong></div>
+    </div>
+
+    <div class="case-hero__actions">
+      <a href="https://github.com/Angelina557744/forno-pizza" class="btn btn--solid" target="_blank" rel="noopener">Открыть код</a>
+      <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Обсудить похожий проект</a>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container case-section__inner">
+    <h2 class="case-section__title">Задача</h2>
+    <p>
+      У пиццерии не было сайта с возможностью заказа онлайн. Гости звонили,
+      заказы фиксировались в блокноте, меню обновлялось вручную. При этом
+      часть клиентов хотела видеть актуальные цены, выбирать размер пиццы
+      и добавлять топпинги без звонка.
+    </p>
+    <p>
+      Нужен был интернет-магазин, который закроет полный цикл: от просмотра
+      меню и сборки заказа до оформления доставки или самовывоза.
+    </p>
+  </div>
+</section>
+
+<section class="case-section case-section--alt">
+  <div class="container">
+    <h2 class="case-section__title">Что реализовано</h2>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Главная страница</h3>
+        <p>
+          Секция с ключевыми преимуществами, блок популярных блюд, описание
+          процесса приготовления и отзывы гостей. Всё адаптивно, с плавными
+          анимациями и единым дизайном в тёплых тонах.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-1.jpg" alt="Главная страница Forno" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Каталог с фильтрами</h3>
+        <p>
+          Меню разбито по категориям: пицца, паста, антипасти, салаты,
+          десерты и напитки. Фильтры позволяют отобрать вегетарианские,
+          острые или безглютеновые блюда.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-2.jpg" alt="Каталог с фильтрами" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Карточка блюда и конструктор пиццы</h3>
+        <p>
+          Для пицц реализован пошаговый выбор размера, типа теста и топпингов
+          с пересчётом цены в реальном времени. Для остальных блюд достаточно
+          кнопки добавления в корзину.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-3.jpg" alt="Карточка блюда" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Корзина и оформление заказа</h3>
+        <p>
+          Корзина хранится в сессии. Пользователь может менять количество
+          товаров, удалять позиции и переходить к оформлению. На шаге
+          оформления выбирается доставка или самовывоз, способ оплаты
+          и вводятся контактные данные.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-4.jpg" alt="Корзина и оформление заказа" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature">
+      <div class="case-feature__text">
+        <h3>Бронирование столов</h3>
+        <p>
+          Отдельная форма с валидацией даты, времени и количества гостей.
+          Брони принимаются с 12:00 до 22:00, дата не может быть в прошлом.
+          После отправки заявка попадает в базу.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-5.jpg" alt="Бронирование столов" loading="lazy">
+      </div>
+    </div>
+
+    <div class="case-feature case-feature--reverse">
+      <div class="case-feature__text">
+        <h3>Страница контактов</h3>
+        <p>
+          Адрес, телефон, почта, часы работы и встроенная карта.
+          Вся информация собрана на одной странице, чтобы гость мог
+          быстро найти ресторан или связаться с ним.
+        </p>
+      </div>
+      <div class="case-feature__img">
+        <img src="img/forno-6.jpg" alt="Страница контактов" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-section__title">Технологии</h2>
+    <div class="skills__groups">
+      <div class="skills__group">
+        <h3 class="skills__label">Frontend</h3>
+        <ul class="skills__list">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          <li>EJS</li><li>Swiper.js</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__label">Backend</h3>
+        <ul class="skills__list">
+          <li>Node.js</li><li>Express.js</li><li>SQLite</li>
+          <li>better-sqlite3</li><li>bcrypt</li><li>Сессии</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3 class="skills__label">Инструменты</h3>
+        <ul class="skills__list">
+          <li>Git / GitHub</li><li>Multer</li>
+          <li>Express EJS Layouts</li><li>Dotenv</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta__inner">
+    <h2 class="cta__title">Нужен похожий проект?</h2>
+    <p class="cta__text">Расскажите задачу — предложу решение и сроки. Отвечу в течение дня.</p>
+    <div class="cta__actions">
+      <button class="btn btn--solid copy-email" data-email="a.webdev@mail.ru">Скопировать email</button>
+      <a href="https://t.me/angelina_webdev" class="btn" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/angelina557744" class="btn" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© 2026 · Ангелина · Full-stack разработчик</span>
+    <div class="footer__links">
+      <a href="https://t.me/angelina_webdev" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/angelina557744" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:a.webdev@mail.ru">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://angelina557744.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
